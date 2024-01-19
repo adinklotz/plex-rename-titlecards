@@ -36,8 +36,8 @@ def rename_in_season(path):
 
 if __name__ == "__main__":
     if len(sys.argv) < 2:
-        print("Missing argument: path to Plex tv library")
-        print("e.g. /hdd/media/tv")
+        print("Missing argument: path to Plex tv library or show")
+        print("e.g. /hdd/media/tv or '/hdd/media/tv/Adventure Time (2010)'")
         exit(1)
     path = Path(sys.argv[1])
     if not path.exists():
