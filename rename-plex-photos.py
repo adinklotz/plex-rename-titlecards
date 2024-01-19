@@ -30,7 +30,7 @@ def rename_in_season(path):
                 episode_episode = match.group(2)
                 if (episode_season == image_season and episode_episode == image_episode):
                     new_name = image.with_stem(episode_stem)
-                    print(f"Renaming {image.name} to {new_name}")
+                    print(f"Renaming {image.name} to {new_name.name}")
                     image.replace(new_name)
                 
 
