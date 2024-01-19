@@ -14,7 +14,7 @@ def rename_in_season(path):
         if child.suffix in {".mkv", ".mp4", ".webm"}:
             episode_stems.add(child.stem)
 
-        elif child.suffix in {".jpg", ".jpeg", ".png"}:
+        elif child.suffix in {".jpg", ".jpeg", ".png", ".webp"}:
             image_paths.append(child)
     
     for image in image_paths:
